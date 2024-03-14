@@ -1,7 +1,151 @@
-#titre{
-    color: aqua;
+/* Reset CSS */
+
+/* Remise à zéro des marges et des rembourrages */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* assure que la largeur/hauteur inclut la bordure et le remplissage */
 }
 
-.deux{
-    font-size: 100px;
+/* Remise à zéro des styles de texte */
+body, h1, h2, h3, p, ul, ol, li, figure, figcaption, blockquote, dl, dd {
+    margin: 0;
+    padding: 0;
 }
+
+/* Remise à zéro des styles de liste */
+ul, ol {
+    list-style: none;
+}
+
+/* Remise à zéro des styles de lien */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Remise à zéro des styles de formulaire */
+button, input, select, textarea {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+/* Remise à zéro des styles de média intégrés */
+img, iframe, embed, object, video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/**************************************/
+
+                /* COLORS */
+
+:root {
+    --primary-color: #007bff; /* Couleur principale */
+    --secondary-color: #6c757d; /* Autre couleur principale */
+    }
+
+/**************************************/
+
+.wrapper{
+    margin: auto;
+    vertical-align: center;
+}
+
+#menu_container,
+#content_container,
+#contact_container{
+    width: 85vw;
+    margin: auto;
+}
+
+    /* MENU PART */
+
+#menu_container{
+    border: 1px solid black;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+}
+
+.menu{
+    background-color: grey;
+    border: 1px solid black;
+}
+    /* CONTENT PART */
+
+#content_container{
+    display: flex;
+    flex-direction: column;
+}
+
+        /* * UP PART * */
+
+.up_part{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    height: 480px;
+    margin-bottom: 10px;
+}
+
+.exp_pro{
+    height: auto;
+    width: 30%;
+    border: 1px solid black;
+    background-color:beige;
+}
+
+.projects{
+    height: auto;
+    width: 70%;
+    border: 1px solid black;
+    background-color:beige;
+}
+
+        /* * DOWN PART * */
+
+.down_part{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.skills{
+    height: auto;
+    width: 70%;
+    border: 1px solid black;
+    background-color:beige;
+
+}
+
+.cv{
+    height: auto;
+    width: 30%;
+    border: 1px solid black;
+    background-color:beige; 
+}
+
+    /* CONTACT PART */
+
+    #contact_container{
+        border: 1px solid black;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .contact{
+        background-color: grey;
+        border: 1px solid black;
+    }
