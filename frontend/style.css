@@ -46,6 +46,7 @@ img, iframe, embed, object, video {
                 /* COLORS */
 
 :root {
+    --black-transparent: rgba(0, 0, 0, 0.1);
     --primary-color: #0b132b; /* Couleur principale */
     --secondary-color: #1c2541;
     --primary-text-color: #E0FBFC;
@@ -60,14 +61,14 @@ img, iframe, embed, object, video {
 body{
     display: flex;
     justify-content: center;
-    background-color: var(--primary-color);
+    background-color: var(--primary-text-color);
 }
 
 .wrapper{
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 100%;
+    width: 85vw;
     height: auto;
     max-width: 1440px;
 }
@@ -81,8 +82,8 @@ body{
 
 #menu_container,
 #contact_container{
-    border: 1px solid white;
     border-radius: 13px;
+    background-color: var(--black-transparent);
 }
 
 
@@ -91,8 +92,7 @@ body{
 section{
     padding: 13px;
     border-radius: 26px;
-    border: 1px solid white;
-    background-color: var(--secondary-color);
+    background-color: var(--black-transparent);
 }
 
     /* MENU PART */
@@ -124,12 +124,12 @@ section{
 
 .exp_pro{
     height: auto;
-    width: 30%;
+    width: calc(33% - 13px);
 }
 
 .projects{
     height: auto;
-    width: 70%;
+    width: calc(77% - 13px);
 }
 
         /* * DOWN PART * */
@@ -142,15 +142,34 @@ section{
     margin-bottom: 13px;
 }
 
+            /* * * PRES * * */
+
+.pres{
+    height: auto;
+    width: calc(40% - 13px);
+}
+
+            /* * * SKILLS * * */
+
 .skills{
     height: auto;
-    width: 70%;
+    width: calc(40% - 13px);
 
 }
 
+            /* * * CV * * */
+
 .cv{
     height: auto;
-    width: 30%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn_dl{
+    padding: 15px 30px;
+    border-radius: 9px;
 }
 
     /* CONTACT PART */
