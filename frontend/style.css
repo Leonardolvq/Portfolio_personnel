@@ -200,6 +200,14 @@ section{
 
     .wrapper{
         height: 100%;
+        width: 95vw;
+    }
+
+    #menu_container{
+        display: inline;
+        position: sticky;
+        top: 0;
+        
     }
 
     #content_container{
