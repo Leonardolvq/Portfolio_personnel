@@ -41,7 +41,9 @@ img, iframe, embed, object, video {
     height: auto;
 }
 
-/**************************************/
+
+/* ------------------------------ */
+
 
                 /* COLORS */
 
@@ -54,182 +56,108 @@ img, iframe, embed, object, video {
     --third-text-color: #3a506b; /* Autre couleur principale */
     }
 
-/**************************************/
+
+/* ------------------------------ */
 
 
         /* GENERAL */
 body{
-    display: flex;
-    justify-content: center;
-    background-color: var(--primary-text-color);
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    background-image: linear-gradient(290deg, rgba(71, 224, 17, 0.15) 0%,rgba(159, 153, 81, 0.15) 100%),linear-gradient(380deg, rgb(5, 10, 46),rgb(251, 85, 78));
     height: 100vh;
-    padding: 20px 0;
+    width: 100vw;
 }
 
-.wrapper{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    width: 85vw;
+#wrapper{
     height: 100%;
-    max-width: 1440px;
-}
-
-#menu_container,
-#content_container,
-#contact_container{
     width: 100%;
-    height: 100%;
-    margin: auto;
-}
-
-#menu_container,
-#contact_container{
-    border-radius: 13px;
-    background-color: var(--black-transparent);
-}
-
-
-/* SECTION */
-
-section{
-    padding: 13px;
-    border-radius: 26px;
-    background-color: var(--black-transparent);
-}
-
-    /* MENU PART */
-
-#menu_container{
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 13px auto;
-}
-
-    /* CONTENT PART */
-
-#content_container{
+    padding: 0 10%;
     display: flex;
     flex-direction: column;
-    max-height: 1000px;
+    gap: 1rem;
 }
 
-        /* * UP PART * */
 
-.up_part{
-    display: flex;
-    gap: 13px;
+/* ------------------------------ */
+
+
+            /* HEADER */
+header{
+    height: 7%;
     width: 100%;
-    height: 70%;
-    margin-bottom: 13px;
+    background-color: #3a506b;
 }
 
-.exp_pro{
-    height: auto;
-    width: calc(33% - 13px);
-}
-
-.projects{
-    height: auto;
-    width: calc(77% - 13px);
-}
-
-        /* * DOWN PART * */
-
-.down_part{
+header nav{
+    height: 100%;
     display: flex;
-    gap: 13px;
-    width: 100%;
-    height: 30%;
-    margin-bottom: 13px;
-}
-
-            /* * * PRES * * */
-
-.pres{
-    height: auto;
-    width: calc(40% - 13px);
-}
-
-            /* * * SKILLS * * */
-
-.skills{
-    height: auto;
-    width: calc(40% - 13px);
-
-}
-
-            /* * * CV * * */
-
-.cv{
-    height: auto;
-    width: 20%;
-    display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
 }
 
-/* .btn_dl{
-    padding: 15px 30px;
-    border-radius: 9px;
-} */
-
-    /* CONTACT PART */
-
-#contact_container{
-    height: 50px;
+header nav ul{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+    gap: 2rem;
 }
 
 
+/* ------------------------------ */
 
 
-    /* MEDIA QUERIES */
+            /* MAIN */
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: nowrap row;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
 
-      
-@media only screen and (max-width: 425px) {
-    /* Styles à appliquer pour les écrans plus petits que 425 pixels */
-    body {
-        height: 100%;
-    }
+#left,
+#right{
+    background-color: #1c2541;
+}
 
-    .wrapper{
-        height: 100%;
-        width: 95vw;
-    }
+#left{
+    background-color: #1c412a;
+    width: 40%;
+    height: 100%;
+}
 
-    #menu_container{
-        display: inline;
-        position: sticky;
-        top: 0;
-        
-    }
+#right{
+    background-color: #1c2541;
+    width: 60%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    gap: 1rem;
+}
 
-    #content_container{
-        height: 100%;
-        max-height: none;
-    }
+.project_preview{
+    height: 85%;
+    width: 100%;
+}
 
-    .up_part,
-    .down_part{
-        flex-direction: column;
-    }
+.skils_carrousel{
+    height: 15%;
+    width: 100%;
+}
+.project_preview,
+.skils_carrousel{
+    background-color: antiquewhite;
+}
 
-    .projects,
-    .exp_pro,
-    .pres,
-    .cv,
-    .skills{
-        width: 100%;
-        min-height: 100px;
-        height: 100%;
-    }
-    
-    /* Ajoutez d'autres styles selon vos besoins */
-    }
-    
+
+/* ------------------------------ */
+
+
+            /* FOOTER */
+footer{
+    height: 7%;
+    width: 100%;
+    background-color: #3a506b;
+}
